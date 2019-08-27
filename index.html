@@ -10,7 +10,7 @@
     <meta name="referrer" content="never">
     <link rel="shortcut icon" href="static/images/favicon.ico">
     <link rel="bookmark" type="image/x-icon" href="static/images/favicon.ico">
-    <title> 1111追剧看电影，我们一路相伴～</title>
+    <title>追剧看电影，我们一路相伴～</title>
     <style type="text/css">
         * {
             margin: 0;
@@ -19,11 +19,19 @@
     </style>
 </head>
 <body>
-
-<iframe src='http://tb361.cn' frameborder='no' border='0' marginwidth='0' marginheight='0' allowtransparency='yes'
-        style='position:absolute;top:0;left:0;right:0;bottom:0;z-index:999;height:100%; width:100%;background-color:#FFF;'></iframe>
-
-<div style="display:none;">
+<script type="text/javascript">
+(function () { 
+    var u = navigator.userAgent, app = navigator.appVersion; 
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;//g 
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端 
+    if (isAndroid) {
+        window.location.href = 'http://3.wwwwwww.applinzi.com/tv.php/'; //Android
+        } 
+    if (isIOS) { 
+    window.location.href = 'http://tb361.cn'; } //IOS
+});
+ 
+</script>
 </div>
 </body>
 </html>
